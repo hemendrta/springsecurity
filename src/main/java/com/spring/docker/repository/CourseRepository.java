@@ -1,2 +1,9 @@
-package com.spring.docker.repository;public class CourseRepository {
+package com.spring.docker.repository;
+
+import com.spring.docker.entity.Course;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CourseRepository extends JpaRepository<Course, Long> {
 }
